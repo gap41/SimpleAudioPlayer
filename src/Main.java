@@ -23,7 +23,7 @@ public class Main {
                 case ("P") : clip.start(); break;
                 case ("S") : clip.stop(); break;
                 case ("R") : clip.setMicrosecondPosition(0); break;
-                case ("Q") : response = "Q"; break;
+                case ("Q") : clip.stop(); break;
                 default: System.out.println("Not a valid response");
             }
         }
